@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">RSSViewHab</string>
+    <string name="app_name">Просмотр RSS хабра</string>
+    <string name="cell_title">Содержимое</string>
 </resources>
