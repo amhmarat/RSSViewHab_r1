@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Просмотр RSS хабра</string>
-    <string name="cell_title">Содержимое</string>
+    <string name="cl_view_title">Заголовок</string>
+    <string name="cl_image_content">Картинка</string>
 </resources>
