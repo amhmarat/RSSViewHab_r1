@@ -12,13 +12,6 @@
         android:layout_height="wrap_content"
         android:text="Cсылка RSS: https://habrahabr.ru/rss/all/" />
 
-    <Button
-        android:id="@+id/la_fetch_but"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="10dip"
-        android:text="Загрузить" />
-
     <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/fl_main_id"
         android:layout_width="match_parent"
