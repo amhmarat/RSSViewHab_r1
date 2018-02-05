@@ -5,4 +5,5 @@ package ru.sberbank.ma.rssviewhab;
  */
 
 public class RecViewActivity extends MainActivity {
+    protected static final String INTENT_ID = "INTENT_ID";
 }
