@@ -1,5 +1,6 @@
 package ru.sberbank.ma.rssviewhab;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -94,6 +95,8 @@ public class HabrViewControl extends Fragment {
 
         @Override
         public void onClick(View v) {
+            Intent intent = RecViewActivity.newIntent(getActivity(), mHabr.getUUID());
+            startActivity(intent);
         }
     }
 
