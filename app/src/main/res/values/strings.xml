@@ -2,4 +2,6 @@
     <string name="app_name">Просмотр RSS хабра</string>
     <string name="cl_view_title">Заголовок</string>
     <string name="cl_image_content">Картинка</string>
+    <string name="habr_view_description">Описание</string>
+    <string name="habr_view_pub_date">Дата публикации</string>
 </resources>
