@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.squareup.picasso.Picasso;
+//import com.squareup.picasso.Picasso;
 
 import java.io.IOException;
 import java.util.List;
@@ -88,7 +88,8 @@ public class HabrViewControl extends Fragment {
             mHabr = habr;
             mTitle.setText(mHabr.getTitle());
 
-            Picasso.with(getActivity()).load(mHabr.getImageUrl()).into(mImage);
+            //Picasso.with(getActivity()).load(mHabr.getImageUrl()).into(mImage);
+            MyImageLoader.fetchImage(mHabr.getImageUrl(), mImage);
             if (mHabr.getImageUrl() == null)
                 mImage.setImageBitmap(mHabr.getImage());
         }

@@ -9,7 +9,7 @@ import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.squareup.picasso.Picasso;
+//import com.squareup.picasso.Picasso;
 
 import java.util.UUID;
 
@@ -48,7 +48,8 @@ public class RecViewControl extends Fragment {
 
         mDate.setText(mHabr.getPubDate());
 
-        Picasso.with(getActivity()).load(mHabr.getImageUrl()).into(mImage);
+        //Picasso.with(getActivity()).load(mHabr.getImageUrl()).into(mImage);
+        MyImageLoader.fetchImage(mHabr.getImageUrl(), mImage);
         if (mHabr.getImageUrl() == null)
             mImage.setImageBitmap(mHabr.getImage());
 
