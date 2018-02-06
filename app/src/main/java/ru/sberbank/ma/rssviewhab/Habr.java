@@ -17,6 +17,7 @@ public class Habr {
     private String mImageUrl;
     private Bitmap mImage;
     private UUID mID;
+    private String mCreater;
 
     Habr() {
         mID = UUID.randomUUID();
@@ -80,5 +81,13 @@ public class Habr {
 
     public UUID getUUID() {
         return mID;
+    }
+
+    public String getCreater() {
+        return mCreater;
+    }
+
+    public void setCreater(String description) {
+        mCreater = description;
     }
 }

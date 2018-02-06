@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -20,7 +21,8 @@ public class RecViewControl extends Fragment {
     private TextView mDate;
     private ImageView mImage;
     private TextView mTitle;
-    private TextView mDescription;
+    //private TextView mDescription;
+    private WebView mDescription;
     private Habr mHabr;
 
     public static Fragment getInstance() {
@@ -41,7 +43,8 @@ public class RecViewControl extends Fragment {
         mDate = (TextView) view.findViewById(R.id.rec_view_pub_date);
         mImage = (ImageView) view.findViewById(R.id.rec_view_image);
         mTitle = (TextView) view.findViewById(R.id.rec_view_title);
-        mDescription = (TextView) view.findViewById(R.id.rec_view_description);
+        //mDescription = (TextView) view.findViewById(R.id.rec_view_description);
+        mDescription = (WebView) view.findViewById(R.id.rec_web_description);
 
         mDate.setText(mHabr.getPubDate());
 
@@ -50,7 +53,8 @@ public class RecViewControl extends Fragment {
             mImage.setImageBitmap(mHabr.getImage());
 
         mTitle.setText(mHabr.getTitle());
-        mDescription.setText(mHabr.getDescription());
+        //mDescription.setText(mHabr.getDescription());
+        mDescription.loadDataWithBaseURL(null, mHabr.getDescription(), "text/html", "utf-8", null);
 
         return view;
     }

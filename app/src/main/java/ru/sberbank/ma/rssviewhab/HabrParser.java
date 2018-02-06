@@ -71,6 +71,9 @@ public class HabrParser {
                                 case "category":
                                     habr.setCategory(parser.getText());
                                     break;
+                                case "dc:creator":
+                                    habr.setCreater(parser.getText());
+                                    break;
                                 default:
                                     break;
                             }
