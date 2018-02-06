@@ -54,7 +54,9 @@ public class RecViewControl extends Fragment {
 
         mTitle.setText(mHabr.getTitle());
         //mDescription.setText(mHabr.getDescription());
-        mDescription.loadDataWithBaseURL(null, mHabr.getDescription(), "text/html", "utf-8", null);
+        String webData = mHabr.getDescription();
+        webData = webData.replace("img src=", "");
+        mDescription.loadDataWithBaseURL(null, webData, "text/html", "utf-8", null);
 
         return view;
     }
